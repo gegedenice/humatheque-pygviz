@@ -6,7 +6,7 @@ This app is a **Panel** application served by the **Bokeh server**.
 
 ```bash
 docker build -t pigviz:dev .
-docker run --name pigviz --rm -p 7860:7860 pigviz:dev
+docker run --name pigviz --rm -p 43100:43100 pigviz:dev
 ```
 
 ## 1) Run without Docker
@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 panel serve app.py \
   --address 0.0.0.0 \
-  --port 7860 \
+  --port 43100 \
   --index app.py \
   --websocket-max-message-size 524288000
 ```

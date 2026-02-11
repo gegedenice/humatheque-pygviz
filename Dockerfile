@@ -23,8 +23,8 @@ RUN mkdir -p /home/appuser/.cache /tmp/panel \
  && chown -R appuser:appuser /home/appuser /app /tmp/panel
 
 # Port (informative)
-EXPOSE 7860
+EXPOSE 43100
 
 USER appuser
 
-CMD ["panel", "serve", "app.py", "--address", "0.0.0.0", "--port", "7860",  "--allow-websocket-origin", "*", "--index", "app", "--websocket-max-message-size","1073741824"]
+CMD ["panel", "serve", "app.py", "--address", "0.0.0.0", "--port", "43100",  "--allow-websocket-origin", "*", "--index", "app", "--websocket-max-message-size","1073741824"]

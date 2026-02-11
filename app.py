@@ -66,6 +66,10 @@ pn.config.raw_css.append(
       background-color: var(--accent-2) !important;
       border-color: var(--accent-2) !important;
     }
+    
+    .bk-panel-models-esm-ReactComponent {
+      width: 100%;
+    }
     """
 )
 
@@ -162,6 +166,7 @@ main = pn.Column(
 # App layout with a true template sidebar and responsive main area
 template = pn.template.BootstrapTemplate(
     title="Graphic Walker",
+    main_max_width="100%",
 )
 template.sidebar.append(sidebar)
 template.main.append(pn.Column(header, main, sizing_mode="stretch_both"))
