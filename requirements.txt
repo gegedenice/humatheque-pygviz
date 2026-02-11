@@ -1,0 +1,4 @@
+panel-graphic-walker
+openpyxl
+fastparquet
+requests
