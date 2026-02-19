@@ -165,7 +165,7 @@ main = pn.Column(
 
 # App layout with a true template sidebar and responsive main area
 template = pn.template.BootstrapTemplate(
-    title="Graphic Walker",
+    title="Humatheque Tiny Dataviz app",
     main_max_width="100%",
 )
 template.sidebar.append(sidebar)
